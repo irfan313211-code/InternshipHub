@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InternshipHub - Find Internships</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="brand">
+                Internship<span>Hub</span>
+            </a>
+
+            <nav>
+                <a href="#internships">Internships</a>
+                <a href="#about">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="container">
+
+                <p class="eyebrow">CAREER OPPORTUNITIES</p>
+
+                <h1>
+                    Find an internship that fits your future.
+                </h1>
+
+                <p class="hero-text">
+                    Search practical opportunities by role,
+                    location, work mode, and stipend.
+                </p>
+
+
+                <!-- Search Form -->
+                <form class="search-panel" action="internships" method="get">
+
+                    <div class="field">
+                        <label for="keyword">
+                            Search internships
+                        </label>
+
+                        <input
+                            type="search"
+                            id="keyword"
+                            name="keyword"
+                            placeholder="e.g. Java, Web Development"
+                        >
+                    </div>
+
+
+                    <div class="field">
+                        <label for="mode">
+                            Work mode
+                        </label>
+
+                        <select id="mode" name="mode">
+                            <option value="">
+                                All modes
+                            </option>
+
+                            <option value="Remote">
+                                Remote
+                            </option>
+
+                            <option value="Hybrid">
+                                Hybrid
+                            </option>
+
+                            <option value="On-site">
+                                On-site
+                            </option>
+                        </select>
+                    </div>
+
+
+                    <div class="field">
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category" name="category">
+
+                            <option value="">
+                                All categories
+                            </option>
+
+                            <option value="Java">
+                                Java
+                            </option>
+
+                            <option value="Web Development">
+                                Web Development
+                            </option>
+
+                            <option value="Data">
+                                Data
+                            </option>
+
+                            <option value="Cyber Security">
+                                Cyber Security
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <button class="btn primary" type="submit">
+                        Search internships
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- Internship Section -->
+        <section id="internships" class="listing-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">
+                            LATEST OPENINGS
+                        </p>
+
+                        <h2>
+                            Featured internships
+                        </h2>
+                    </div>
+
+                    <a href="internships" class="text-link">
+                        View all
+                    </a>
+
+                </div>
+
+
+                <!-- Internship Cards -->
+                <div class="grid">
+
+
+                    <!-- Card 1 -->
+                    <article class="card">
+
+                        <div class="card-top">
+
+                            <span class="tag">
+                                Java
+                            </span>
+
+                            <span class="mode">
+                                Remote
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Java Programming Intern
+                        </h3>
+
+                        <p class="company">
+                            TechNova Solutions
+                        </p>
+
+                        <ul class="meta">
+
+                            <li>
+                                ₹5,000 / month
+                            </li>
+
+                            <li>
+                                3 months
+                            </li>
+
+                            <li>
+                                Open to students
+                            </li>
+
+                        </ul>
+
+                        <a
+                            href="internship?id=1"
+                            class="btn secondary"
+                        >
+                            View internship
+                        </a>
+
+                    </article>
+
+
+                    <!-- Card 2 -->
+                    <article class="card">
+
+                        <div class="card-top">
+
+                            <span class="tag">
+                                Web Development
+                            </span>
+
+                            <span class="mode">
+                                Hybrid
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Frontend Web Developer Intern
+                        </h3>
+
+                        <p class="company">
+                            PixelCraft Labs
+                        </p>
+
+                        <ul class="meta">
+
+                            <li>
+                                ₹8,000 / month
+                            </li>
+
+                            <li>
+                                4 months
+                            </li>
+
+                            <li>
+                                HTML/CSS required
+                            </li>
+
+                        </ul>
+
+                        <a
+                            href="internship?id=2"
+                            class="btn secondary"
+                        >
+                            View internship
+                        </a>
+
+                    </article>
+
+
+                    <!-- Card 3 -->
+                    <article class="card">
+
+                        <div class="card-top">
+
+                            <span class="tag">
+                                Data
+                            </span>
+
+                            <span class="mode">
+                                On-site
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Data Analyst Intern
+                        </h3>
+
+                        <p class="company">
+                            InsightWorks
+                        </p>
+
+                        <ul class="meta">
+
+                            <li>
+                                ₹10,000 / month
+                            </li>
+
+                            <li>
+                                6 months
+                            </li>
+
+                            <li>
+                                Excel + SQL
+                            </li>
+
+                        </ul>
+
+                        <a
+                            href="internship?id=3"
+                            class="btn secondary"
+                        >
+                            View internship
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="about">
+
+            <div class="container about-box">
+
+                <div>
+
+                    <p class="eyebrow">
+                        ACCESSIBLE BY DESIGN
+                    </p>
+
+                    <h2>
+                        Built for every screen and every keyboard.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Semantic HTML, visible focus states,
+                    descriptive labels, high-contrast text,
+                    large touch targets, and responsive layouts
+                    make the interface easier to use.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 InternshipHub.
+                Demo internship listing interface.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
